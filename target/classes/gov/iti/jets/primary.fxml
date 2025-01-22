@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="gov.iti.jets.PrimaryController" spacing="10" style="-fx-padding: 20;">
+   <TableView fx:id="tableView" prefHeight="200">
+      <columns>
+         <TableColumn fx:id="idColumn" text="ID" prefWidth="50" />
+         <TableColumn fx:id="firstNameColumn" text="First Name" prefWidth="100" />
+         <TableColumn fx:id="middleNameColumn" text="Middle Name" prefWidth="100" />
+         <TableColumn fx:id="lastNameColumn" text="Last Name" prefWidth="100" />
+         <TableColumn fx:id="emailColumn" text="Email" prefWidth="150" />
+         <TableColumn fx:id="phoneColumn" text="Phone" prefWidth="100" />
+      </columns>
+   </TableView>
+
+   <Label text="User Details" style="-fx-font-size: 16; -fx-font-weight: bold;" />
+   <TextField fx:id="firstNameField" promptText="First Name" />
+   <TextField fx:id="middleNameField" promptText="Middle Name" />
+   <TextField fx:id="lastNameField" promptText="Last Name" />
+   <TextField fx:id="emailField" promptText="Email" />
+   <TextField fx:id="phoneField" promptText="Phone" />
+
+   <HBox spacing="10">
+      <Button fx:id="firstButton" text="First" />
+      <Button fx:id="previousButton" text="Previous" />
+      <Button fx:id="nextButton" text="Next" />
+      <Button fx:id="lastButton" text="Last" />
+      <Button fx:id="addButton" text="Add" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" />
+      <Button fx:id="updateButton" text="Update" style="-fx-background-color: #2196F3; -fx-text-fill: white;" />
+      <Button fx:id="deleteButton" text="Delete" style="-fx-background-color: #F44336; -fx-text-fill: white;" />
+   </HBox>
+</VBox>
